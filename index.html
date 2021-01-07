@@ -1,9 +1,197 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style type='text/css'>
         
+        h1,h2 {
+                color: rgb(5, 129, 63);
+                font-family: sans-serif;
+            }
+
+            body {
+                font-size: 20px;
+                background-color:rgb(231, 255, 231);
+                margin:0px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td{
+                border: 1px solid black;
+                padding: 3px;
+            }
+
+            td.empty {
+                background-color: #ddd;
+            }
+
+            .container {
+                margin: 0 auto;
+                padding: 5px;
+                max-width: 1200px;
+            }
+
+            #nav-bar {
+                position: relative;
+                display: block;
+                width: 100%;
+                background-color: rgb(5, 129, 63);
+                font-family: sans-serif;
+                color: white;
+            }
+            .page-name {
+                font-weight: bold;
+            }
+            .nav-item {
+                position: relative;
+                padding: 0.5em;
+                display: inline-block;
+            }
+            .nav-item a {
+                text-decoration: none;
+                color: white;
+            }
+            .nav-item:hover {
+                background-color: indigo;
+                cursor: pointer;
+            }            
+            .nav-item .dropdown {
+                display: none;
+            }
+            .nav-item:hover .dropdown {
+                display: block;
+                position: absolute;
+                top: 2em;
+                left: 0px;
+                /* height: 200px; */
+                min-width: 150px;
+                background-color: darkslateblue;
+            }
+            .dropdown-item {
+                position: relative;
+                padding: 0.5em;
+                display: block;
+            }
+            .dropdown-item:hover {
+                background-color: indigo;
+            }
+        
+        </style>
     </head>
     <body>
+        <div id="nav-bar">
+            <div class="nav-item page-name">Cool Kid's HW Site</div>
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item">
+                <a href="#">Assignments</a>
+                <div class="dropdown">
+                    <div class="dropdown-item">Hello!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
 
+            <h1>Alyssa's Assignments</h1>
+            <p>Full-stack app development 2021</p>
+            <ul>
+                <li>Difficulty: 1 = no problem at all, 5 = could not do</li>
+                <li>Usefulness: 1 = not a good use of time, 5 = very useful</li>
+            </ul>
+            <h2>Week 1: Building a website</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Assignment</td>
+                        <td>Submission</td>
+                        <td>Time (hours)</td>
+                        <td>Difficult (1-5)</td>
+                        <td>Useful (1-5)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.1</td>
+                        <td>Watch tutorial 1, follow along</td>
+                        <td class="empty">N/A</td>
+                        <td>1.5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.2</td>
+                        <td>Deploy a website to GitHub pages</td>
+                        <td><a href=""> </a></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.3</td>
+                        <td>Deploy an assignments page (this page!) </td>
+                        <td></td>
+                        <td>1.5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.4*</td>
+                        <td>Create a personal/professional homepage</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.5</td>
+                        <td>Create two screens of your first app</td>
+                        <td><a href=""></a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1.6*</td>
+                        <td>Create a side-menu in CSS</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>1.7*</td>
+                        <td>Create a periodic table of the elements using HTML & CSS</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+                    <tr>
+                        <td>1.A</td>
+                        <td>What did you like this week?</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>1.B</td>
+                        <td>What didn't you like this week?</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>1.C</td>
+                        <td>How can we improve the material from this week?</td>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td>1.D*</td>
+                        <td>Show us anything else you coded up this week!</td>
+                        <td colspan="4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
